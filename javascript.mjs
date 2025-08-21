@@ -20,23 +20,51 @@
 // create a loop that logs each item in Robin’s inventory.
 
 const adventurer = {
-name: "Robin",
-health: 10,
-inventory: ["sword", "potion", "artifact"],
-companion: {
+    name: "Robin",
+    health: 10,
+    inventory: ["sword", "potion", "artifact"],
+    companion: {
+        name: "Leo",
+        type: "Cat"
+    companion: {
+      name: "Frank",
+      type: "Flea",
+      belongings: ["small hat", "sunglasses"]
+    }
+
+    }
+
+
+}
+
+for (let item of adventurer.inventory) {
+  console.log(item);
+}
+
+
+// console.log(adventurer.companion.name);
+
+const adventurer = {
+  name: "Robin",
+  health: 10,
+  inventory: ["sword", "potion", "artifact"],
+  companion: {
     name: "Leo",
-    type: "Cat"
+    type: "Cat",
+    companion: {
+      name: "Frank",
+      type: "Flea",
+      belongings: ["small hat", "sunglasses"]
+    }
+  }	
 }
 
 
-}
-
-// for (let item of adventurer.inventory) {
-//   console.log(item);
-// }
+console.log (adventurer.companion.companion.name);
+console.log(adventurer.companion.companion.belongings[1]);
 
 
-console.log(adventurer.companion.name);
+
 
 
 
